@@ -7,6 +7,7 @@ package br.com.newloran2.jleacher.Dir;
 import com.sun.org.apache.xml.internal.resolver.helpers.FileURL;
 import java.io.File;
 import java.io.FileFilter;
+import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -58,10 +59,17 @@ public class Parser {
         Collection<File> packList = new ArrayList<File>();
 
         for (File channel : bootList) {
-            File[] files = channel.listFiles();
-            for (File pack : files) {
-                packList.add(pack);
+            File[] files = channel.listFiles(new FilenameFilter() {
+
+                public boolean accept(File file, String string) {
+                    return string.endsWith(NOT_PROCESSED);
+                }
+            });
+            
+            for (File file : files) {
+                packList.add(file);
             }
+            
         }
         return packList;
     }

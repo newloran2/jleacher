@@ -34,11 +34,11 @@ public class ParserTest {
         String serverChannel = "#animensk";
         String[] channelBoots = new String[]{"ANSK|Laura", "ANSK|Kuroneko", "ANSK|Victorique", "ANSK|Kobato", "ANSK|Sora"};
         ArrayList<String[]> bootPacks = new ArrayList();
-        bootPacks.add(new String[]{"795.nd", "796.nd", "847.nd"});
-        bootPacks.add(new String[]{"913.nd", "915.nd", "939.nd"});
-        bootPacks.add(new String[]{"708.nd", "825.nd", "884.nd"});
-        bootPacks.add(new String[]{"276.nd", "761.nd", "830.nd"});
-        bootPacks.add(new String[]{"720.nd"});
+        bootPacks.add(new String[]{"795.np", "796.np", "847.np"});
+        bootPacks.add(new String[]{"913.np", "915.np", "939.np"});
+        bootPacks.add(new String[]{"708.np", "825.np", "884.np"});
+        bootPacks.add(new String[]{"276.np", "761.np", "830.np"});
+        bootPacks.add(new String[]{"720.np"});
 
         File dirContents = new File(tmpDir + File.separator + serverDir);
         if (dirContents.exists()) {
