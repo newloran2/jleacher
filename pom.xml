@@ -32,6 +32,11 @@
             <artifactId>commons-io</artifactId>
             <version>2.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.jpathwatcher</groupId>
+            <artifactId>jpathwatcher</artifactId>
+            <version>0.9.5</version>
+        </dependency>
     </dependencies>
   
   
